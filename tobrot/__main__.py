@@ -161,12 +161,6 @@ if __name__ == "__main__" :
     )
     app.add_handler(upload_log_handler)
     #
-    help_text_handler = MessageHandler(
-        help_message_f,
-        filters=Filters.command(["help"]) & Filters.chat(chats=AUTH_CHANNEL)
-    )
-    app.add_handler(help_text_handler)
-    #
     new_join_handler = MessageHandler(
         new_join_f,
         filters=~Filters.chat(chats=AUTH_CHANNEL)
