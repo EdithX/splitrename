@@ -161,12 +161,6 @@ if __name__ == "__main__" :
     )
     app.add_handler(upload_log_handler)
     #
-    new_join_handler = MessageHandler(
-        new_join_f,
-        filters=~Filters.chat(chats=AUTH_CHANNEL)
-    )
-    app.add_handler(new_join_handler)
-    #
     call_back_button_handler = CallbackQueryHandler(
         button
     )
