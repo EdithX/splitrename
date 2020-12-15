@@ -214,12 +214,6 @@ if __name__ == "__main__" :
     )
     app.add_handler(split_video_handler)
 
-    gp_link_handler = MessageHandler(
-        gp_link_generate,
-        filters=Filters.command([f"{GP_LINKS_COMMAND}"]) & Filters.chat(chats=AUTH_CHANNEL)
-    )
-    app.add_handler(gp_link_handler)
-
     incoming_gdrive_and_tg_message_handler = MessageHandler(
         incoming_gdrive_and_tg_message_f,
         filters=Filters.command("gtleech") & Filters.chat(chats=AUTH_CHANNEL)
