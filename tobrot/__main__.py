@@ -44,7 +44,7 @@ from tobrot import (
 from pyrogram import Client, Filters, MessageHandler, CallbackQueryHandler
 
 from tobrot.plugins.incoming_message_fn import incoming_message_f, incoming_youtube_dl_f, incoming_purge_message_f, \
-    g_yt_playlist, rename_message_f, split_video, gp_link_generate, \
+    g_yt_playlist, rename_message_f, split_video, \
     incoming_gdrive_and_tg_message_f
 from tobrot.plugins.rclone_size import check_size_g, g_clearme
 from tobrot.plugins.status_message_fn import (
